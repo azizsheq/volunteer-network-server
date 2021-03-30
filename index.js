@@ -21,13 +21,11 @@ client.connect(err => {
     console.log('connected with mongodb database')
 
     // data POST testing
-    // const newEvent = { "name": "Event One" };
-    // eventCollection.insertOne(newEvent)
-    //     .then(result => { console.log(`Successfully inserted item with _id: ${result.insertedId}`) })
-    //     .catch(err => { console.error(`Failed to insert item: ${err}`) })
+    const newEvent = { "name": "Event One" };
+    eventCollection.insertOne(newEvent)
+        .then(result => { console.log(`Successfully inserted item with _id: ${result.insertedId}`) })
+        .catch(err => { console.error(`Failed to insert item: ${err}`) })
 
-
-    //
 });
 
 
